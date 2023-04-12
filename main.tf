@@ -1,7 +1,7 @@
 #setting-up provider
 
 provider "aws" {
-    region = "us-west-1"  
+    region = "ap-south-1"  
 }
 
 # write the ec2 instance config 

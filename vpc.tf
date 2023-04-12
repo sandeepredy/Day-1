@@ -21,7 +21,7 @@ resource "aws_internet_gateway" "sandeep-internet-gateway" {
 resource "aws_subnet" "sandeep-public-subnet-1" {
   vpc_id                  = aws_vpc.sandeep_vpc.id
   cidr_block              = var.Public_Subnet_1
-  availability_zone       = "us-east-1a"
+  availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = true
   tags = {
     Name = "sandeep public-subnet-1"
@@ -52,7 +52,7 @@ resource "aws_route_table_association" "public-subnet-1-route-table-association"
 resource "aws_subnet" "sandeep-private-subnet-1" {
   vpc_id                  = aws_vpc.sandeep_vpc.id
   cidr_block              = var.Private_Subnet_1
-  availability_zone       = "us-east-1a"
+  availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = false
   tags = {
     Name = "sandeep_private-subnet-1"
