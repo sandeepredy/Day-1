@@ -44,7 +44,7 @@ resource "aws_route_table" "sandeep-public-route-table" {
 # Associate Public Subnet 1 to "Public Route Table"
 # terraform aws associate subnet with route table
 resource "aws_route_table_association" "public-subnet-1-route-table-association" {
-  subnet_id      = aws_subnet.public-subnet-1.id
+  subnet_id      = aws_subnet.sandeep-public-subnet-1.id
   route_table_id = aws_route_table.sandeep-public-route-table.id
 }
 # Create Private Subnet 1
